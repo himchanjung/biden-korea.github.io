@@ -18,34 +18,43 @@ p {
   position: absolute;
   width: 80%;
   height: 80%;
-  background-color: rgba(13, 13, 13, 0.6);
+  background-color: rgba(245, 245, 245, 1.0);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
+img.parallax-img {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 190px;
+}
+
 p.parallax-title {
-  font-family: Tahoma, Geneva, sans-serif;
-  text-align: left;
-  color: white;
-  font-size: 400%;
-  padding-top: 3%;
-  padding-left: 15%;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  font-size: 300%;
+  padding-top: 20%;
+  padding-left: 0%;
 }
 
 p.parallax-author {
   font-family: Helvetica, sans-serif;
   text-align: center;
-  color: white;
-  font-size: 100%;
+  color: black;
+  font-size: 150%;
 }
 
 p.parallax-body {
   font-family: "Times New Roman", Times, serif;
-  color: white;
-  font-size: 150%;
-  padding-left: 15%;
-  padding-right: 15%;
+  color: black;
+  font-size: 130%;
+  padding-left: 18%;
+  padding-right: 18%;
 }
 
 /* The actual timeline (the vertical ruler) */
