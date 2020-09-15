@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "css/timeline.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script type = "text/javascript">
+        $.getJSON("biden.json", function (data) {
+            var html = '';
+            $.each(data, function (key, value) {
+                if (key % 2 == 0) {
+                    html += '<div class="container left">';
+                } else {
+                    html += '<div class="container right">';
+                }
+                html += '<div class="content">';
+                html += '<h2>' + value.DATEx + '</h2>';
+                html += '<h2>' + value.TOPIC + '</h2>';
+                html += '<p>' + value.EXCERPTSx + '</p>';
+                html += '</div>';
+                html += '</div>';
+            });
+            
+            $('div.timeline').html(html);
+        });
+    </script>
+
+</head>
+<body>
+    <div class="timeline">
+    </div>
+</body>
