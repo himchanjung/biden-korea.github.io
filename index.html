@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "css/timeline.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/parallax.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
-    <script type = "text/javascript">
+    <script type="text/javascript">
         $.getJSON("biden.json", function (data) {
             var html = '';
             $.each(data, function (key, value) {
@@ -17,17 +18,30 @@
                 html += '<div class="content">';
                 html += '<h2>' + value.DATEx + '</h2>';
                 html += '<h2>' + value.TOPIC + '</h2>';
-                html += '<p>' + value.EXCERPTSx + '</p>';
+                html += '<p>' + value.EXCERPTS_EXPAND + '</p>';
                 html += '</div>';
                 html += '</div>';
             });
-            
+
             $('div.timeline').html(html);
         });
     </script>
 
 </head>
+
 <body>
-    <div class="timeline">
+    <div class="parallax">
+        <div class="centered">
+            <p class="parallax-title">Joe Biden <br>on North Korea</p>
+            <!-- <p class="parallax-author">By Won-Gi Jung</p> -->
+            <p class="parallax-body">Before becoming the Vice President of the United States,
+                and now the Democratic Presidential Candidate, Joe Biden Jr. has been an outspoken critic of hawkish
+                foreign policies towards North Korea.</p>
+            <p class="parallax-body">Biden's statements on North Korea during his years as Delaware's Senator tell us
+                what to expect from the Biden presidency. Looking at CSPAN records since 2000, we follow the
+                trajectory
+                of Biden's stance on Washington's North Korean policy.</p>
+        </div>
     </div>
+    <div class="timeline"></div>
 </body>

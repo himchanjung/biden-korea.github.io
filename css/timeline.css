@@ -4,7 +4,48 @@
 
 body {
   background-color: #474e5d;
+}
+
+h2 {
   font-family: Helvetica, sans-serif;
+}
+
+p {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.centered {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background-color: rgba(13, 13, 13, 0.6);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+p.parallax-title {
+  font-family: Tahoma, Geneva, sans-serif;
+  text-align: left;
+  color: white;
+  font-size: 400%;
+  padding-top: 3%;
+  padding-left: 15%;
+}
+
+p.parallax-author {
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 100%;
+}
+
+p.parallax-body {
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  font-size: 150%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 /* The actual timeline (the vertical ruler) */
